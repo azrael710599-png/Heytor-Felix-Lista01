@@ -1,0 +1,26 @@
+let numeros = [15, 3, 9];
+
+function ordenaCrescente(vetor) {
+  let a = vetor[0];
+  let b = vetor[1];
+  let c = vetor[2];
+  let menor, meio, maior;
+
+  if (a <= b && a <= c) {
+    menor = a;
+    meio = b <= c ? b : c;
+    maior = b <= c ? c : b;
+  } else if (b <= a && b <= c) {
+    menor = b;
+    meio = a <= c ? a : c;
+    maior = a <= c ? c : a;
+  } else {
+    menor = c;
+    meio = a <= b ? a : b;
+    maior = a <= b ? b : a;
+  }
+
+  console.log(`Os números em ordem crescente são: ${menor}, ${meio}, ${maior}`);
+}
+
+ordenaCrescente(numeros);
