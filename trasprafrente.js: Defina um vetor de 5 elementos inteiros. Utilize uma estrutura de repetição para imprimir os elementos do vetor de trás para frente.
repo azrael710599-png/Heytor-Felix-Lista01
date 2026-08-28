@@ -1,0 +1,7 @@
+let numeros = [1, 2, 3, 4, 5];
+
+// Utiliza uma estrutura de repetição para imprimir os elementos de trás para frente
+console.log("Elementos do vetor de trás para frente:");
+for (let i = numeros.length - 1; i >= 0; i--) {
+  console.log(numeros[i]);
+}
