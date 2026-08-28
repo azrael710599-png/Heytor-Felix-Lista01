@@ -1,7 +1,6 @@
 let peso = 70;
 let altura = 1.75;
 
-// Função que calcula o IMC e informa se está dentro da faixa ideal
 function calculaIMC(peso, altura) {
   let imc = peso / (altura * altura);
 
