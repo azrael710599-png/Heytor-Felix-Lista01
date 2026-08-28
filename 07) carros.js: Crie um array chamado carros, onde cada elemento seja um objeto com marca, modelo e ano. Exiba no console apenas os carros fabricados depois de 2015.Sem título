@@ -1,0 +1,15 @@
+let carros = [
+  { marca: "Toyota", modelo: "Corolla", ano: 2018 },
+  { marca: "Volkswagen", modelo: "Gol", ano: 2012 },
+  { marca: "Honda", modelo: "Civic", ano: 2020 },
+  { marca: "Fiat", modelo: "Uno", ano: 2010 },
+  { marca: "Chevrolet", modelo: "Onix", ano: 2016 }
+];
+
+// Exibe no console apenas os carros fabricados depois de 2015
+console.log("Carros fabricados depois de 2015:");
+carros.forEach((carro) => {
+  if (carro.ano > 2015) {
+    console.log(`${carro.marca} ${carro.modelo} (${carro.ano})`);
+  }
+});
