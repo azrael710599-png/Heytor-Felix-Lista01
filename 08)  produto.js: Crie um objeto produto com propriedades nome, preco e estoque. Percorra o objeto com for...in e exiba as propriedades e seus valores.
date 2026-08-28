@@ -4,7 +4,6 @@ let produto = {
   estoque: 12
 };
 
-// Percorre o objeto com for...in e exibe as propriedades e seus valores
 for (let propriedade in produto) {
   console.log(`${propriedade}: ${produto[propriedade]}`);
 }
