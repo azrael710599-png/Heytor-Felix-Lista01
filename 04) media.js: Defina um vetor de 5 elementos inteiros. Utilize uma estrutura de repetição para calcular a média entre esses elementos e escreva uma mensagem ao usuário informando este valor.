@@ -1,0 +1,10 @@
+let numeros = [8, 5, 9, 7, 6];
+
+// Utiliza uma estrutura de repetição para calcular a média entre os elementos
+let soma = 0;
+for (let i = 0; i < numeros.length; i++) {
+  soma += numeros[i];
+}
+let media = soma / numeros.length;
+
+console.log(`A média dos números é: ${media}`);
