@@ -1,1 +1,17 @@
+let numeros = [12, 45, 3, 27, 9];
 
+let maior = numeros[0];
+let menor = numeros[0];
+
+// Utiliza uma estrutura de repetição para encontrar o maior e o menor valor
+for (let i = 1; i < numeros.length; i++) {
+  if (numeros[i] > maior) {
+    maior = numeros[i];
+  }
+  if (numeros[i] < menor) {
+    menor = numeros[i];
+  }
+}
+
+console.log(`O maior valor do vetor é: ${maior}`);
+console.log(`O menor valor do vetor é: ${menor}`);
