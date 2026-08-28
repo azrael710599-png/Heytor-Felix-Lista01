@@ -18,14 +18,12 @@ let turmas = [
   }
 ];
 
-// Método que ordena os alunos de cada turma em ordem crescente de nota
 function ordenaAlunosPorNota(turmas) {
   turmas.forEach((turma) => {
     turma.alunos.sort((a, b) => a.nota - b.nota);
   });
 }
 
-// Método que imprime a mensagem de aprovação ou reprovação de cada aluno
 function exibeResultados(turmas) {
   turmas.forEach((turma) => {
     console.log(`\nTurma do professor ${turma.nomeProfessor}:`);
