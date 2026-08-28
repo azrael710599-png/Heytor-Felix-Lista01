@@ -1,0 +1,43 @@
+let turmas = [
+  {
+    nomeProfessor: "Carlos Mendes",
+    alunos: [
+      { nome: "Ana", nota: 8.5 },
+      { nome: "Bruno", nota: 6.0 },
+      { nome: "Carla", nota: 9.2 },
+      { nome: "Diego", nota: 4.5 }
+    ]
+  },
+  {
+    nomeProfessor: "Fernanda Lima",
+    alunos: [
+      { nome: "Eduardo", nota: 7.0 },
+      { nome: "Fabiana", nota: 3.8 },
+      { nome: "Gustavo", nota: 9.9 }
+    ]
+  }
+];
+
+// Método que ordena os alunos de cada turma em ordem crescente de nota
+function ordenaAlunosPorNota(turmas) {
+  turmas.forEach((turma) => {
+    turma.alunos.sort((a, b) => a.nota - b.nota);
+  });
+}
+
+// Método que imprime a mensagem de aprovação ou reprovação de cada aluno
+function exibeResultados(turmas) {
+  turmas.forEach((turma) => {
+    console.log(`\nTurma do professor ${turma.nomeProfessor}:`);
+    turma.alunos.forEach((aluno) => {
+      if (aluno.nota >= 7) {
+        console.log(`Parabéns ${aluno.nome} , você foi aprovado com a nota ${aluno.nota}`);
+      } else {
+        console.log(`Não foi dessa vez ${aluno.nome}, você reprovou com a nota ${aluno.nota}`);
+      }
+    });
+  });
+}
+
+ordenaAlunosPorNota(turmas);
+exibeResultados(turmas);
