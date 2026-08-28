@@ -6,7 +6,6 @@ let carros = [
   { marca: "Chevrolet", modelo: "Onix", ano: 2016 }
 ];
 
-// Exibe no console apenas os carros fabricados depois de 2015
 console.log("Carros fabricados depois de 2015:");
 carros.forEach((carro) => {
   if (carro.ano > 2015) {
